@@ -1,0 +1,10 @@
+<H1>Dice Game<hr></H1>
+
+<%= @die1 %> <%= @die2%><br><br>
+
+Your point is now <%= @sum %>.  Now try to get <%= @sum %> again before you roll a 7.<br><br>
+
+<form action= roll/continue method="get">
+<input type="hidden" name="point" value= <%= @sum %>><br>
+<input type="submit" value="Roll the dice">
+</form>

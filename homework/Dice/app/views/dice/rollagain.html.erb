@@ -1,0 +1,10 @@
+<H1>Dice Game<hr></H1>
+
+<%= @die1 %> <%= @die2%><br><br>
+
+Your point is <%= @point %>. You can roll again.<br><br>
+
+<form action= continue method="get">
+<input type="hidden" name="point" value= <%= @point %>><br>
+<input type="submit" value="Roll again">
+</form>

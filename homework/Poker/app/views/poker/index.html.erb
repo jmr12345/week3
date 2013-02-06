@@ -1,0 +1,7 @@
+<H1>Poker Cards</H1>
+<%= link_to "Refresh this page to deal a new hand", poker_url %>
+<br><hr><br>
+
+<% @hands.each do |card| %>
+  <%= card %>
+<% end %>
